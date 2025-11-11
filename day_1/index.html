@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/4e8b1b21b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Nav -->
+<nav class="bg-red-100 backdrop-blur-md ">
+  <div class="mx-auto max-w-7xl px-4 sm:px-3 md:px-3  lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+"
+             class="h-20 w-20 rounded-full  shadow-md" />
+      </div>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-black hover:text-amber-300 transition">Home</a>
+        <a href="#" class="text-black hover:text-amber-300 transition">Gold</a>
+        <a href="#" class="text-black hover:text-amber-300 transition">Diamond</a>
+        <a href="#" class="text-black hover:text-amber-300 transition">Earrings</a>
+        <a href="#" class="text-black hover:text-amber-300 transition">Rings</a>
+        <a href="#" class="text-black hover:text-amber-300 transition">Contact</a>
+      </div>
+
+      <!-- Profile / Cart -->
+      <div class="hidden md:flex items-center space-x-4">
+        <button class="text-black hover:text-amber-300 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a3 3 0 1 1-5.714 0" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- hero section -->
+<section class="w-full h-screen bg-[url('https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw2be157a8/homepage/HeroBanner/drops-of-radiance-desktop.jpg')] bg-cover bg-center flex flex-col items-center justify-center text-white relative overflow-hidden">
+  <!-- Overlay for contrast -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Centered Content -->
+  <div class="relative z-10 text-center px-6">
+    <!-- Logo -->
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+"
+         alt="Brand Logo"
+         class="mx-auto mb-6 w-32 md:w-48 rounded-full shadow-lg  border-amber-500" />
+
+    <!-- Tagline -->
+    <p class="uppercase tracking-[4px] text-amber-300 mb-2">Tanishq</p>
+    <h1 class="text-4xl md:text-4xl font-bold leading-tight mb-4">
+       Explore our newly launched collection
+    </h1>
+    <p class="text-lg text-gray-200 mb-6">
+          Explore our exquisite collection of handcrafted jewelry.
+    </p>
+
+    <!-- Button -->
+    <a href="#"
+       class="inline-block bg-amber-400 text-amber-900 font-semibold px-8 py-3 rounded-md hover:bg-amber-500 transition">
+      Shop Now
+    </a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="bg-gray-50 py-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 text-center">
+    
+    <!-- Certified -->
+    <div class="flex flex-col items-center justify-center py-6 px-6">
+      <!-- SVG Icon -->
+      <div class="bg-white rounded-full p-3 mb-3 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#D97706" class="w-10 h-10">
+          <circle cx="12" cy="8" r="3"></circle>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12l2-1 1-3 2 2 2-2 1 3 2 1"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 21c.8-2.6 1.8-5 4-5s3.2 2.4 4 5"></path>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800">Certified</h3>
+      <p class="text-sm text-gray-600">Available certificates of authenticity</p>
+    </div>
+
+    <!-- Secure -->
+    <div class="flex flex-col items-center justify-center py-6 px-6">
+      <div class="bg-white rounded-full p-3 mb-3 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#D97706" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l7 3v5c0 5-3 9-7 11-4-2-7-6-7-11V5l7-3z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 11.5l1.8 1.8L15 9"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800">Secure</h3>
+      <p class="text-sm text-gray-600">Certified marketplace since 2024</p>
+    </div>
+
+    <!-- Shipping -->
+    <div class="flex flex-col items-center justify-center py-6 px-6">
+      <div class="bg-white rounded-full p-3 mb-3 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#D97706" class="w-10 h-10">
+          <rect x="1.5" y="6" width="13" height="8" rx="1"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 8h4l2 3v3"/>
+          <circle cx="7.5" cy="17.5" r="1.5"/>
+          <circle cx="18.5" cy="17.5" r="1.5"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800">Shipping</h3>
+      <p class="text-sm text-gray-600">Free, fast, and reliable worldwide</p>
+    </div>
+
+    <!-- Transparent -->
+    <div class="flex flex-col items-center justify-center py-6 px-6">
+      <div class="bg-white rounded-full p-3 mb-3 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="#D97706" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 3v6h-6"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 10-3.2 6.6L21 12z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-gray-800">Transparent</h3>
+      <p class="text-sm text-gray-600">Hassle-free return policy</p>
+    </div>
+  </div>
+</section>
+
+<!-- content start -->
+<section class="py-16 bg-rose-300">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
+    
+    <!-- Image Side -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQgcrMjllrdQc_SYAg5h-U14cyWU4fzr7fMLQBqb7J7hJf7UErFkk0ALJIoYMFlaK03D_Chg6vlb235f205QEj8OApocaAl6YMKnYPI2QOANve40fmko1AnqA" 
+           alt="Jewelry Image" 
+           class="w-full h-full object-cover rounded-lg shadow-lg">
+    </div>
+    
+    <!-- Text Content Side -->
+    <div class="md:w-1/2">
+      <h3 class="text-3xl text-white font-bold mb-4">„Elevate Your Presence“</h3>
+      <p class="text-white mb-6">
+    Discover the subtle elegance that speaks volumes. With a single statement piece draped close to the heart, our collection blends refined understatement with modern confidence — perfect for those who let their style do the talking.
+      </p>
+      <ul class="list-disc list-inside text-white mb-6 space-y-2">
+        <li>Minimalist necklace design — maximum impact</li>
+        <li>Carefully selected high‑quality material for lasting brilliance </li>
+        <li>Designed to complement, not overpower, your personal style  </li>
+        <li>Ideal for both day‑to‑day wear and special evenings </li>
+      </ul>
+      <a href="#" 
+         class="inline-block bg-lime-300 text-amber-900 font-semibold px-6 py-3 rounded-md hover:bg-amber-500 transition">
+        Explore The Essential Collection
+      </a>
+    </div>
+  </div>
+</section>
+
+ <section class="py-16 bg-rose-300">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse  md:flex-row items-center md:space-x-12"> 
+    
+    <!-- Text Content Side -->
+    <div class="md:w-1/2">
+      <h3 class="text-3xl text-white font-bold mb-4">“Timeless Grace, Modern Radiance”</h3>
+      <p class="text-white mb-6">
+   Embrace the spirit of elegance woven into every detail. This piece celebrates the fusion of heritage‑and‑high‑style, where tradition lives in modern form. Let your look reflect confidence, culture, and contemporary beauty — all in harmony.
+      </p>
+      <ul class="list-disc list-inside text-white mb-6 space-y-2">
+        <li>A design rooted in legacy, fashioned for today’s woman</li>
+        <li>Meticulously crafted to enhance this moment and the next</li>
+        <li>Balanced to highlight both strength and sophistication</li>
+        <li>Ideal for making an impression — whether it’s day wear or a statement piece </li>
+      </ul>
+      <a href="#" 
+         class="inline-block bg-lime-300 text-amber-900 font-semibold px-6 py-3 rounded-md hover:bg-amber-500 transition">
+        Discover the Heritage Collection
+      </a>
+    </div> 
+
+        
+    <!-- Image Side -->
+<div class="md:w-1/2 mb-8 md:mb-0">
+  <img src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw43869af4/homepage/tanishq-collections/floral-bloom.jpg" 
+       alt="Jewelry Image" 
+       class="w-full h-80 object-cover rounded-lg shadow-lg">
+</div> 
+
+ </section> 
+
+<section class="py-16 bg-rose-300"> ">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
+    
+    <!-- Image Side -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="https://cdn.caratlane.com/media/static/images/V4/2025/CL/10_OCT/others/Collections/Web/01/sol_d_1.jpg" 
+           alt="Jewelry Image" 
+           class="w-full h-80 object-cover rounded-lg shadow-lg">
+    </div>
+    
+    <!-- Text Content Side -->
+    <div class="md:w-1/2">
+      <h3 class="text-3xl text-white font-bold mb-4">Exquisite Craftsmanship</h3>
+      <p class="text-white mb-6">
+        Discover our latest collection of high-end jewelry, crafted with the finest materials and meticulous attention to detail. 
+        Every piece tells a story and reflects your unique style.
+      </p>
+      <ul class="list-disc list-inside text-white mb-6 space-y-2">
+        <li>Handcrafted Designs</li>
+        <li>Premium Quality Materials</li>
+        <li>Exclusive Limited Editions</li>
+        <li>Sustainable Sourcing</li>
+      </ul>
+      <a href="#" 
+         class="inline-block bg-lime-300 text-amber-900 font-semibold px-6 py-3 rounded-md hover:bg-amber-500 transition">
+        Explore Collection
+      </a>
+    </div>
+  </div>
+</section>
+<!-- content end -->
+
+<!-- new collection -->
+<section class="py-16 bg-pink-50">
+  <h3 class="text-3xl font-bold text-center mb-10">Check Our New Collection</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://cdn.pixabay.com/photo/2019/12/09/12/14/ring-4683406_1280.jpg" alt="Ring" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Diamond Ring</h4>
+        <p class="text-amber-700 font-bold mt-2">$250</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://media.istockphoto.com/id/804087652/photo/golden-necklace-chain.jpg?s=1024x1024&w=is&k=20&c=clhBHK1ilfIVDkWHfWgSEqjH8Nkw2nB2O-gtDct0pZM=" alt="Necklace" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Gold Necklace</h4>
+        <p class="text-amber-700 font-bold mt-2">$480</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://media.istockphoto.com/id/1131963203/photo/fancy-designer-golden-earrings-closeup-macro-image-on-red-background.jpg?s=612x612&w=0&k=20&c=0ctP3f8BVqH6zq64OUIsmWnhUOobgCbOGU0suNOKtow=" alt="Earring" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Gold Earrings</h4>
+        <p class="text-amber-700 font-bold mt-2">$180</p>
+      </div>
+    </div>
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8A3aXl-5e-Z_KaTRwVV9Aizcu8cJdLi26KQ&s" alt="Earring" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Diamond Bracelet</h4>
+        <p class="text-amber-700 font-bold mt-2">$540</p>
+      </div>
+    </div>
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="data:image/jpeg;base64,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tNno3qbT1KFf+rkGp3VCSPK2FwLfHPHxOj07R06dOBn01Jrq7YszDMs2VMvY/pAC28WP7TFbH2xMa34X482v5Tr8/Lcqbvtel2z8wnqFLeooyUMb8AE5WsTkDa/OfAPA4+prbn1Aump0xlkyPUIqqFS36HBAAJuGALH2tNTRbNvGq6QH9uWph/zCDJscPGPnEIQHPLBrjjzz3NwqUdHq6OaqtKq9woLYpYHFMSbG/FieeAJXWkRP28zv9L8mfj7vj9s+zI+k19RVcIRUFRsUTEVwpF0Iv2m/gn3J95X3Ve5a6rrno6hwVSox4Fr3NxceOL2AEk3Vu809m3Wk2gxOSj1UFv02AN7cHyL29vHEr2tVevVLVTdibk/JM1YMevulkvebcvERE0oEREBERAREQEREBERAREQEREBERAREQEREBERASVbd1dU0Ow+kFvUHapPjCx58+R4tb+ZFZ9xON55asT5Fo0aOm/8AEVAb/CNGzHIj9OQuL2POR/eRDqDqIbts1GmR3g3fzwQLC3tY5MftOUHrDQ+mHOBOWPtcf9zSKkDmQrjiJ2jEPdWtVrEesxawCi5Jso4AF/AHxMcRLEiIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIifRyeYHqnTLibFMqKUwh8fE+LUZRwZ4My1E9Dm/iKtnAAmC5x/3nr1DfmHr5WQIRjMcy5XaYz5nrx8iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiB9ifIgfbxPkQPs+REBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERED/2Q==" alt="Earring" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Gold Necklace</h4>
+        <p class="text-amber-700 font-bold mt-2">$580</p>
+      </div>
+    </div>
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+      <img src="https://cdn.pixabay.com/photo/2020/01/06/04/59/proposal-4744577_1280.jpg" alt="Earring" class="w-full h-64 object-cover">
+      <div class="p-4 text-center">
+        <h4 class="text-xl font-semibold">Diamond ring</h4>
+        <p class="text-amber-700 font-bold mt-2">$880</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+
+  <!-- visit -->
+<section class="relative w-full h-screen bg-[url('https://media.istockphoto.com/id/1342815644/photo/woman-looking-at-jewelery-showcase.jpg?s=2048x2048&w=is&k=20&c=uZnDdiw5kTEJfYZorGr5-cmh4kKQ5Xn_s3UDLh5Pklc=')] bg-cover bg-center flex items-center justify-center">
+  <!-- Overlay for better readability -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 max-w-3xl text-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Step Into Our World of Elegance</h2>
+    <p class="text-lg md:text-xl mb-6">
+      Explore our curated collection of exquisite jewelry, crafted with passion and precision. Each piece tells a story, waiting for you to discover it.
+    </p>
+    <p class="text-lg md:text-4xl font-bold">
+      Visit Our Shop
+    </p>
+    <br>
+    <p class=" font-bold"> 📍 SAHAJ PLATINUM SHOP NO B-8 BESIDE BANSI MEDICAL SNEH PLAZA ROAD, IOC Rd, Chandkheda, Ahmedabad, Gujarat 382424</p>
+  </div>
+</section>
+
+<br><br>
+
+<!-- video -->
+<div class=" bg-[#22110D] flex justify-center mt-10">
+  <iframe
+    class="w-[90%] md:w-[80%] lg:w-[90%] rounded-lg shadow-lg"
+    height="800"
+    src="https://www.youtube.com/embed/OGNaGN73B5U?list=TLGGeJQPKauXKxEwNTExMjAyNQ"
+    title="Noureen, Where Tradition Meets Timeless Elegance"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+ <br><br>
+
+<!-- footer -->
+<footer class="bg-[#22110D] text-white py-8 text-center">
+  <p class="mb-4">&copy; 2025 NorrenJewels. All Rights Reserved.</p>
+  
+  <div class="flex justify-center space-x-6">
+    <a href="#" class="flex items-center space-x-2 hover:text-amber-300 transition">
+      <i data-lucide="instagram" class="w-5 h-5"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="#" class="flex items-center space-x-2 hover:text-amber-300 transition">
+      <i data-lucide="facebook" class="w-5 h-5"></i>
+      <span>Facebook</span>
+    </a>
+    <a href="#" class="flex items-center space-x-2 hover:text-amber-300 transition">
+      <i data-lucide="twitter" class="w-5 h-5"></i>
+      <span>Twitter</span>
+    </a>
+  </div>
+
+  <!-- Lucide Icons Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</footer>
+ 
+</body>
+</html>

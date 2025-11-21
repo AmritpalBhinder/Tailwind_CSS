@@ -28,7 +28,7 @@ export default function Footer() {
 
         <div>
           <h2 className="text-lg font-semibold text-white mb-3">Contact Us</h2>
-          <p className="text-sm">📍 Address: Shop No:- 125,Sarthee Appartment, Chalthan, Surat, Gujarat, India</p>
+          <p className="text-sm">📍 Address: Shop No:- 125, Sarthee Appartment, Chalthan, Surat, Gujarat, India</p>
           <p className="text-sm">📞 Phone: +91 9558841150</p>
           <p className="text-sm">📧 Email: gurukrupasteelart1550@gmail.com</p>
         </div>

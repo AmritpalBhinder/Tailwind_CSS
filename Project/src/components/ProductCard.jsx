@@ -9,75 +9,59 @@ import pr7 from '../assets/Images/pr7.jpeg';
 import pr8 from '../assets/Images/pr8.jpg';
 
 export default function ProductCard() {
+  const products = [
+    { img: product1, name: "Steel Gates", desc: "Custom-designed heavy-duty steel gates for homes & industries.", price: "₹4,500 – ₹18,000" },
+    { img: product2, name: "Steel Railings", desc: "High-strength stainless steel railings for safety & durability.", price: "₹500 – ₹1,500 per ft" },
+    { img: product3, name: "Steel Staircase", desc: "Modern & strong steel staircases for commercial spaces.", price: "₹15,000 – ₹65,000" },
+    { img: product4, name: "Steel Sheds", desc: "Weather-resistant steel sheds for warehouses & workshops.", price: "₹25,000 – ₹1,20,000" },
+    { img: pr5, name: "Metal Fabrication", desc: "All types of custom metal cutting, bending & fabrication work.", price: "₹300 – ₹2,000 per piece" },
+    { img: pr6, name: "Welding Services", desc: "MIG, TIG, Arc welding services with professional finishing.", price: "₹200 – ₹1,000 per job" },
+    { img: pr7, name: "Steel Grills", desc: "Strong and stylish window & balcony steel grill designs.", price: "₹400 – ₹900 per ft" },
+    { img: pr8, name: "Steel Furniture", desc: "Durable & long-lasting steel tables, racks, and cabinets.", price: "₹2,000 – ₹15,000" },
+  ];
+
   return (
     <div className="m-4">
 
-      {/* Grid Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-4 bg-black">
 
-        {/* Card 1 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={product1} alt="Steel Gate" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Gates</h3>
-          <p className="text-center text-sm text-gray-600">Custom-designed heavy-duty steel gates for homes & industries.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹4,500 – ₹18,000</p>
-        </div>
+        {products.map((p, i) => (
+          <div
+            key={i}
+            className="
+              group 
+              bg-[#1a1a1a]/70 
+              backdrop-blur-xl 
+              rounded-2xl 
+              p-4 
+              border border-gray-700 
+              shadow-[0_0_20px_rgba(0,0,0,0.4)]
+              transition 
+              duration-300 
+              hover:-translate-y-2 
+              hover:border-blue-500 
+              hover:shadow-[0_0_35px_rgba(59,130,246,0.7)]
+            "
+          >
+            <img
+              src={p.img}
+              alt={p.name}
+              className="w-full h-40 object-cover rounded-xl group-hover:scale-105 transition duration-300"
+            />
 
-        {/* Card 2 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={product2} alt="Steel Railings" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Railings</h3>
-          <p className="text-center text-sm text-gray-600">High-strength stainless steel railings for safety & durability.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹500 – ₹1,500 per ft</p>
-        </div>
+            <h3 className="text-center mt-3 font-semibold text-lg text-blue-300 group-hover:text-blue-400 transition">
+              {p.name}
+            </h3>
 
-        {/* Card 3 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={product3} alt="Steel Staircase" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Staircase</h3>
-          <p className="text-center text-sm text-gray-600">Modern & strong steel staircases for commercial spaces.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹15,000 – ₹65,000</p>
-        </div>
+            <p className="text-center text-sm text-gray-300 mt-1">
+              {p.desc}
+            </p>
 
-        {/* Card 4 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={product4} alt="Steel Shed" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Sheds</h3>
-          <p className="text-center text-sm text-gray-600">Weather-resistant steel sheds for warehouses & workshops.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹25,000 – ₹1,20,000</p>
-        </div>
-
-        {/* Card 5 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={pr5} alt="Metal Fabrication" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Metal Fabrication</h3>
-          <p className="text-center text-sm text-gray-600">All types of custom metal cutting, bending & fabrication work.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹300 – ₹2,000 per piece</p>
-        </div>
-
-        {/* Card 6 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={pr6} alt="Welding Service" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Welding Services</h3>
-          <p className="text-center text-sm text-gray-600">MIG, TIG, Arc welding services with professional finishing.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹200 – ₹1,000 per job</p>
-        </div>
-
-        {/* Card 7 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={pr7} alt="Custom Steel Grills" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Grills</h3>
-          <p className="text-center text-sm text-gray-600">Strong and stylish window & balcony steel grill designs.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹400 – ₹900 per ft</p>
-        </div>
-
-        {/* Card 8 */}
-        <div className="bg-gray-100 rounded-md p-3 shadow hover:shadow-lg duration-200">
-          <img src={pr8} alt="Steel Furniture" className="w-full h-40 object-cover rounded-md" />
-          <h3 className="text-center mt-2 font-semibold text-lg">Steel Furniture</h3>
-          <p className="text-center text-sm text-gray-600">Durable & long-lasting steel tables, racks, and cabinets.</p>
-          <p className="text-center mt-2 font-bold text-gray-800">₹2,000 – ₹15,000</p>
-        </div>
+            <p className="text-center mt-3 font-bold text-blue-400 tracking-wide">
+              {p.price}
+            </p>
+          </div>
+        ))}
 
       </div>
     </div>
